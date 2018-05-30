@@ -1,2 +1,2 @@
-# seq_theme
-Sequentra WordPress Theme
+# perrigo_ir_theme
+Perrigo Ireland WordPress Theme
