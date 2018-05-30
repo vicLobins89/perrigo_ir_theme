@@ -34,19 +34,12 @@ Stylesheet: Typography
 
 ******************************************************************/
 /*********************
-TYPEKIT
-*********************/
-@import url("https://use.typekit.net/jhw2cze.css");
-/*********************
 FONT FACE
 *********************/
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
   word-wrap: break-word; }
-
-strong, b {
-  font-weight: 600; }
 
 /******************************************************************
 Site Name: Honey
@@ -91,13 +84,6 @@ GENERAL STYLES
 *********************/
 html {
   font-size: 81%; }
-
-.featured-image img {
-  width: 180%;
-  left: -30%; }
-
-.team-carousel .carousel-item {
-  padding: 2.5rem 1.5rem 0; }
 
 /*********************
 NAVIGATION STYLES
@@ -147,70 +133,11 @@ GENERAL STYLES
 html {
   font-size: 80%; }
 
-hr {
-  width: 100%;
-  margin: 2rem auto; }
-
-.featured-image .page-title {
-  width: 60%;
-  height: 50%;
-  overflow: auto;
-  margin: auto 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 7%;
-  text-align: left; }
-  .featured-image .page-title h1 {
-    font-size: 3.2rem;
-    text-align: left; }
-  .featured-image .page-title p {
-    margin: 0.5rem 0 1.5rem; }
-  .page-home-page .featured-image .page-title {
-    height: 70%;
-    left: 35%; }
-  .page-contact-us .featured-image .page-title {
-    height: 59%; }
-.featured-image img {
-  width: 100% !important;
-  height: auto;
-  left: auto; }
-
-.row.wrap {
-  margin: 0.75rem auto 1rem; }
-.row [class*="col-"] {
-  padding: 2rem; }
-.row .col-6:nth-child(odd) {
-  padding-right: 2.85rem; }
-.row .col-6:nth-child(even) {
-  padding-left: 2.15rem; }
-.row.grad-alt {
-  display: block;
-  text-align: left; }
-  .row.grad-alt .icon, .row.grad-alt img[alt*="icon-"] {
-    margin: 0 1rem 1rem; }
-  .page-home-page .row.grad-alt [class*="col-"] {
-    min-height: 28rem; }
-  .page-technology .row.grad-alt [class*="col-"] {
-    min-height: 21rem; }
-
-.team-carousel .carousel-item {
-  padding: 2.5rem 3.5rem 0; }
-
-.cat-filter ul {
-  display: inline-block;
-  margin-left: 1.85rem; }
-
-.single .wrap.post {
-  max-width: 90%; }
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
   width: 760px; }
-  .wrap.insights-text {
-    margin-left: auto; }
 
 /*********************
 HEADER STYLES
@@ -238,12 +165,6 @@ NAVIGATION STYLES
 .menu-button {
   display: none; }
 
-.menu-wrapper {
-  opacity: 1;
-  visibility: visible;
-  padding: 0;
-  position: relative; }
-
 nav li {
   text-align: left; }
   nav li a {
@@ -267,6 +188,11 @@ nav li {
         color: #8b8b8a; }
     .nav li ul.sub-menu,
     .nav li ul.children {
+      display: block;
+      position: absolute;
+      visibility: hidden;
+      background: #fff;
+      margin: 0;
       /* highlight sub-menu current page */ }
       .nav li ul.sub-menu li,
       .nav li ul.children li {
@@ -283,39 +209,6 @@ nav li {
     .nav li:hover > ul {
       top: auto;
       visibility: visible; }
-
-.socket-nav {
-  position: absolute;
-  right: 2rem;
-  top: 0;
-  margin: 1.4rem 0;
-  padding-right: 2.5rem; }
-  .socket-nav li {
-    display: inline-block;
-    margin-left: 0.85rem;
-    margin-right: 0;
-    font-size: 90%; }
-    .socket-nav li a:hover, .socket-nav li a:focus {
-      color: #8b8b8a; }
-    .socket-nav li.green-btn {
-      display: inline-block;
-      max-width: none;
-      margin: auto;
-      margin-left: 0.85rem; }
-    .socket-nav li.lang-item {
-      display: block;
-      position: absolute;
-      right: 0;
-      margin: 0; }
-      .socket-nav li.lang-item a {
-        display: block;
-        font-size: 0; }
-      .socket-nav li.lang-item img {
-        width: 22px; }
-    .socket-nav li.lang-item-en {
-      top: 0; }
-    .socket-nav li.lang-item-es {
-      bottom: 0; }
 
 /*********************
 SIDEBARS & ASIDES
@@ -340,15 +233,6 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-.pre-footer .col-6 {
-  padding: 10px; }
-
-.social {
-  float: right;
-  text-align: left; }
-  .social a {
-    margin: 0 0 0 3rem; }
-
 .footer-links {
   float: left; }
   .footer-links ul {
@@ -370,24 +254,6 @@ Stylesheet: Desktop Stylsheet
 ******************************************************************/
 .wrap {
   width: 1020px; }
-
-.featured-image .page-title {
-  left: 20%;
-  width: 40%; }
-  .page-home-page .featured-image .page-title {
-    height: 50%;
-    left: 40%; }
-  .page-about-us .featured-image .page-title {
-    height: 40%; }
-
-.single .wrap.post {
-  max-width: 70%; }
-
-.nav {
-  margin: 1.5em 0; }
-
-.page-home-page .row.grad-alt [class*="col-"], .page-technology .row.grad-alt [class*="col-"] {
-  min-height: 17rem; }
 
 /******************************************************************
 ADDITIONAL IE FIXES

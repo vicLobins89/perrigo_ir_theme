@@ -30,24 +30,6 @@
 								); ?>
 
 							  </p>
-								
-								<div class="share-this">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank" class="facebook">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-									
-									<a href="https://twitter.com/home?status=<?php echo get_permalink(); ?>" target="_blank" class="twitter">
-										<i class="fab fa-twitter"></i>
-									</a>
-									
-									<a href="https://plus.google.com/share?url=<?php echo get_permalink(); ?>" target="_blank" class="google-plus">
-										<i class="fab fa-google-plus-g"></i>
-									</a>
-									
-									<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>&title=<?php the_title(); ?>&summary=&source=" target="_blank" class="linked-in">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</div>
 
 							</header> <?php // end article header ?>
 

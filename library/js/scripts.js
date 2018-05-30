@@ -43,69 +43,8 @@ jQuery(document).ready(function($) {
 		$(this).parents('.header').toggleClass('active');
 	});
 	
-	$('.news-carousel').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 4000,
-		arrows: false,
-		centerMode: true,
-		centerPadding: '80px',
-		responsive: [
-			{
-				breakpoint: 1030,
-				settings: {
-					slidesToShow: 3
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
-	});
-	
-	$('.team-carousel').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 4000,
-		arrows: false,
-		centerMode: true,
-		centerPadding: '80px',
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
-	});
-	
-	
 	$(window).on('load resize', function(){
 		viewport = updateViewportDimensions();
-		
-		if( viewport.width >= 768 ) {
-			$('.features-outer li').css('width', (100/$('.features-outer li').length)+'%');
-		} else {
-			$('.features-outer li').css('width', 100+'%');
-		}
 	});
 
 

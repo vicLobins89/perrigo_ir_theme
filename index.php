@@ -6,41 +6,15 @@
 
 						<div id="main" class="cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-							<?php get_sidebar('sidebar2'); ?>
-
 							<?php if ( have_posts() ) :  ?>
 							
-							<div class="team-carousel cf">
-							<?php
-							$featuredQuery = new WP_Query( array(
-								'category_name'  => 'featured',
-								'posts_per_page' => -1
-							) );	
-							?>
-							<?php while ( $featuredQuery->have_posts() ) : $featuredQuery->the_post(); ?>
-								<div class="carousel-item">
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post-thumb">
-										<?php the_post_thumbnail('rectangle-thumb-s'); ?>
-									</a>
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post-title">
-										<?php the_title(); ?>
-									</a>
-									<?php the_excerpt(); ?>
-								</div>
-							<?php endwhile; ?>
-							<?php wp_reset_postdata(); ?>
-							</div>
-							
 							<div class="wrap posts-main cf">
-								<div class="cat-filter">
-									<?php wp_list_categories(array(
-										'exclude' => 17,
-										'hide_empty' => true,
-										'style' => 'list',
-										'title_li' => 'Filter'
-									)); ?>
-									<hr style="margin: 0.75rem 0;">
-								</div>
+								<?php wp_list_categories(array(
+									'exclude' => 17,
+									'hide_empty' => true,
+									'style' => 'list',
+									'title_li' => 'Filter'
+								)); ?>
 								
 								<?php while (have_posts()) : the_post(); ?>
 									<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-4 cf' ); ?> role="article">

@@ -15,7 +15,6 @@ IMPORTING PARTIALS
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url("https://use.typekit.net/jhw2cze.css");
 article,
 aside,
 details,
@@ -436,18 +435,12 @@ Stylesheet: Typography
 
 ******************************************************************/
 /*********************
-TYPEKIT
-*********************/
-/*********************
 FONT FACE
 *********************/
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
   word-wrap: break-word; }
-
-strong, b {
-  font-weight: 600; }
 
 /******************************************************************
 Site Name: Honey
@@ -578,7 +571,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .green-btn, a.comment-reply-link, #submit, a.green-btn {
   display: inline-block;
   position: relative;
-  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
   background-color: #000;
@@ -664,7 +657,7 @@ textarea,
   border: 1px solid #8b8b8a;
   width: 100%;
   max-width: 400px;
-  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #fff;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -919,9 +912,8 @@ html {
   font-size: 76%; }
 
 body {
-  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 100;
   line-height: 1.5;
   color: #000;
   background-color: #fff;
@@ -940,205 +932,6 @@ img {
     float: left; }
   img.alignright {
     float: right; }
-
-hr {
-  display: block;
-  width: 87%;
-  height: 1px;
-  background: #bad3ca;
-  border: none;
-  clear: both;
-  margin: 1rem auto; }
-
-.featured-image {
-  position: relative;
-  font-size: 0;
-  margin-bottom: 2.5rem;
-  overflow: hidden; }
-  .featured-image .page-title, .featured-image .widget_text {
-    position: absolute;
-    height: 56%;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    margin: auto 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0; }
-    .featured-image .page-title h1, .featured-image .widget_text h1 {
-      color: #fff;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin: 0;
-      text-align: center;
-      font-size: 2.35rem; }
-    .featured-image .page-title p, .featured-image .widget_text p {
-      color: #fff;
-      width: 80%;
-      margin: 0.5rem auto 1.5rem;
-      font-size: 1.35rem; }
-    .featured-image .page-title a, .featured-image .widget_text a {
-      -webkit-box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.4);
-      box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.4); }
-      .featured-image .page-title a:hover, .featured-image .widget_text a:hover, .featured-image .page-title a:focus, .featured-image .widget_text a:focus {
-        color: #0b6b4e; }
-    .page-about-us .featured-image .page-title, .page-about-us .featured-image .widget_text, .page-roadmap .featured-image .page-title, .page-roadmap .featured-image .widget_text, .blog .featured-image .page-title, .archive .featured-image .page-title, .blog .featured-image .widget_text, .archive .featured-image .widget_text, .archive .featured-image .page-title, .archive .featured-image .widget_text, .page-contact-us .featured-image .page-title, .page-contact-us .featured-image .widget_text {
-      text-shadow: 5px 1px 14px rgba(0, 0, 0, 0.9); }
-  .featured-image img {
-    position: relative;
-    width: 260%;
-    height: auto;
-    max-width: none;
-    left: -50%; }
-    .page-technology .featured-image img, .page-about-us .featured-image img, .page-roadmap .featured-image img, .blog .featured-image img, .archive .featured-image img, .archive .featured-image img {
-      width: 160%; }
-    .page-contact-us .featured-image img {
-      width: 200%; }
-    .blog .featured-image img, .archive .featured-image img {
-      max-width: none !important;
-      left: 0; }
-    .single .featured-image img {
-      width: 100%;
-      left: 0; }
-  .featured-image .widget_media_image {
-    padding: 0;
-    margin: 0; }
-  .featured-image .widget_text {
-    padding: 0; }
-    .archive .featured-image .widget_text {
-      display: none; }
-
-.row {
-  font-size: 0; }
-  .row.wrap {
-    margin: 0 auto; }
-  .row [class*="col-"] {
-    padding: 1rem 2rem; }
-  .row .col-6 {
-    float: none;
-    display: inline-block;
-    vertical-align: middle; }
-  .page-contact-us .row h3 {
-    font-size: 1.85rem; }
-  .page-contact-us .row h5 {
-    font-size: 2rem; }
-  .row p strong, .row p b {
-    font-weight: 400;
-    color: #333333; }
-  .row p a:not(.green-btn):not(a.comment-reply-link):not(#submit) {
-    color: #0b6b4e; }
-  .row.grad-alt {
-    margin: 0 auto !important;
-    padding: 0;
-    display: flex;
-    flex-direction: column; }
-    .row.grad-alt [class*="col-"] {
-      margin: 0;
-      padding: 3.75rem 3rem 4.25rem;
-      vertical-align: top;
-      min-height: 17rem;
-      order: 2; }
-      .row.grad-alt [class*="col-"] p {
-        margin: 1rem 0; }
-        .row.grad-alt [class*="col-"] p strong, .row.grad-alt [class*="col-"] p b {
-          font-weight: 400;
-          font-size: 120%;
-          color: #333333;
-          letter-spacing: 0.1rem;
-          line-height: 2; }
-      .row.grad-alt [class*="col-"].grad {
-        order: 1; }
-    .row.grad-alt hr {
-      order: 3; }
-    .row.grad-alt .icon, .row.grad-alt img[alt*="icon-"] {
-      transform: scale(0.7);
-      transform-origin: top;
-      margin: 0 0.5rem 1rem 0;
-      max-width: 100px; }
-
-.grad {
-  background: #47b074;
-  background: -moz-linear-gradient(top, #47b074 0%, #5ab689 100%);
-  background: -webkit-linear-gradient(top, #47b074 0%, #5ab689 100%);
-  background: linear-gradient(to bottom, #47b074 0%, #5ab689 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47b074', endColorstr='#5ab689',GradientType=0 ); }
-  .grad * {
-    color: #fff !important; }
-
-.features-outer {
-  padding: 3.5rem 0 4.75rem;
-  margin: 1.5rem 0; }
-  .features-outer .features-inner .features-title {
-    font-size: 1.85rem;
-    margin: 1.5rem; }
-  .features-outer .features-inner ol {
-    text-align: center;
-    counter-reset: item; }
-    .features-outer .features-inner ol li {
-      display: inline-block;
-      vertical-align: top;
-      text-align: left;
-      padding: 0 1.5rem;
-      margin-bottom: 1rem; }
-      .features-outer .features-inner ol li p {
-        margin: 0; }
-      .features-outer .features-inner ol li:before {
-        display: inline-block;
-        content: counter(item) ".";
-        counter-increment: item;
-        font-size: 3rem;
-        font-weight: 400; }
-
-.news-carousel .carousel-item, .team-carousel .carousel-item {
-  padding: 2rem 2rem 0;
-  border: none;
-  outline: none; }
-.news-carousel .post-thumb img, .team-carousel .post-thumb img {
-  margin-bottom: 0.85rem; }
-.news-carousel .post-title, .team-carousel .post-title {
-  display: block;
-  color: #333333;
-  font-size: 1.35rem;
-  font-weight: 400;
-  line-height: 1.2;
-  text-decoration: none;
-  margin: 0.5rem; }
-  .news-carousel .post-title:hover, .team-carousel .post-title:hover, .news-carousel .post-title:focus, .team-carousel .post-title:focus {
-    color: #8b8b8a; }
-.news-carousel h4, .team-carousel h4, .news-carousel p, .team-carousel p {
-  margin: 0.5rem; }
-.news-carousel a, .team-carousel a {
-  border: none;
-  outline: none; }
-.news-carousel img, .team-carousel img {
-  max-width: 100%;
-  margin-bottom: 1.2rem; }
-
-.blog .team-carousel, .archive .team-carousel, .archive .team-carousel {
-  margin-bottom: 2.5rem; }
-.team-carousel .carousel-item {
-  padding: 2.5rem 2.5rem 0; }
-  .blog .team-carousel .carousel-item, .archive .team-carousel .carousel-item, .archive .team-carousel .carousel-item {
-    padding: 2.5rem 1.5rem 0; }
-
-.releases h2 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 2.3rem;
-  text-transform: uppercase; }
-.releases h4 {
-  color: #333333; }
-.releases .title {
-  font-size: 1.5rem;
-  margin: 0.5rem 0 1rem; }
-.releases p {
-  margin: 0; }
-.releases .col-6 {
-  padding-right: 10%; }
-.releases hr {
-  margin-bottom: 1rem; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1166,32 +959,6 @@ WORDPRESS BODY CLASSES
 .blog .image-thumb, .archive .image-thumb {
   display: block; }
 
-.cat-filter {
-  margin-left: 1.5rem; }
-  .cat-filter ul, .cat-filter li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-weight: 400;
-    font-size: 1rem;
-    text-transform: uppercase; }
-  .cat-filter > li {
-    color: #000;
-    font-size: 1.25rem; }
-  .cat-filter ul {
-    display: block; }
-    .cat-filter ul li {
-      margin-right: 1.5rem; }
-      .cat-filter ul li a {
-        text-decoration: none;
-        color: #333333; }
-        .cat-filter ul li a:hover, .cat-filter ul li a:focus {
-          color: #666666; }
-      .cat-filter ul li.current-cat a {
-        color: #000;
-        text-decoration: underline; }
-
 /* search page */
 /* search result page */
 /* no results search page */
@@ -1206,8 +973,6 @@ LAYOUT & GRID STYLES
 .wrap {
   width: 100%;
   margin: 0 auto; }
-  .wrap.insights-text {
-    margin-left: 2rem; }
 
 /*********************
 LINK STYLES
@@ -1232,7 +997,6 @@ H1, H2, H3, H4, H5, P STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 400;
   line-height: 1.2; }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
@@ -1243,20 +1007,16 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2.8rem;
-  font-weight: 400;
   margin: 0.35rem 0 1rem;
   color: #333333; }
 
 h3, .h3 {
   font-size: 2.65rem;
-  font-weight: 400;
   margin: 0 0 1rem;
-  text-transform: uppercase;
   letter-spacing: 0.2rem; }
 
 h4, .h4 {
   font-size: 1.3rem;
-  font-weight: 400;
   letter-spacing: 0.075rem;
   text-transform: uppercase;
   margin: 0.25rem 0; }
@@ -1319,26 +1079,10 @@ NAVIGATION STYLES
   line-height: 1;
   font-size: 2.4rem; }
 
-.menu-wrapper {
-  opacity: 0;
-  visibility: hidden;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  padding: 3rem 1rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .active .menu-wrapper {
-    opacity: 1;
-    visibility: visible; }
-
 nav li {
   text-align: center; }
   nav li a {
     text-transform: uppercase;
-    font-weight: 400;
     font-size: 1.25rem;
     line-height: 1;
     text-decoration: none;
@@ -1368,16 +1112,6 @@ nav li {
     .nav li ul.children li a {
       padding-left: 30px; }
 
-.socket-nav {
-  margin: 0;
-  text-align: center; }
-  .socket-nav .green-btn, .socket-nav a.comment-reply-link, .socket-nav #submit {
-    display: block;
-    max-width: 14rem;
-    margin: 1.5rem auto; }
-  .socket-nav .lang-item {
-    display: inline-block; }
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1405,36 +1139,12 @@ POSTS & CONTENT STYLES
 /* post meta */
 .byline {
   color: #333333;
-  font-weight: 400;
   margin: 0; }
-
-.share-this {
-  margin: 2rem 0 0.5rem; }
-  .share-this a {
-    background: #000;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    text-align: center;
-    margin-right: 4px;
-    padding: 10px 0; }
-    .share-this a.facebook {
-      background: #3b5998; }
-    .share-this a.twitter {
-      background: #00aced; }
-    .share-this a.google-plus {
-      background: #dd4b39; }
-    .share-this a.linked-in {
-      background: #007bb6; }
-    .share-this a i {
-      color: #fff;
-      font-size: 20px; }
 
 /* entry content */
 .entry-content {
   padding: 1.5rem 2rem 0; }
   .entry-content h2 {
-    font-weight: 100;
     font-size: 2.25rem;
     margin: 1rem 3rem; }
   .entry-content p {
@@ -1494,19 +1204,6 @@ POSTS & CONTENT STYLES
     margin: 0 0 1.5em;
     border-radius: 3px; }
 
-.related-posts .related-post a {
-  display: block; }
-  .related-posts .related-post a img {
-    width: 100%;
-    height: auto; }
-  .related-posts .related-post a.entry-title {
-    color: #333333;
-    font-weight: 400;
-    font-size: 1.35rem;
-    text-decoration: none; }
-    .related-posts .related-post a.entry-title:hover, .related-posts .related-post a.entry-title:focus {
-      color: #666666; }
-
 .wp-caption {
   max-width: 100%;
   background: #eee;
@@ -1527,8 +1224,7 @@ POSTS & CONTENT STYLES
 /* gallery caption styles */
 .tags {
   margin: 0;
-  color: #000;
-  font-weight: 400; }
+  color: #000; }
   .tags a {
     color: #666666;
     text-decoration: none; }
@@ -1732,27 +1428,8 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-.pre-footer .col-6 {
-  padding: 10px 2rem; }
-  .pre-footer .col-6:nth-child(even) {
-    padding: 0 2rem; }
-
-.social {
-  text-align: center; }
-  .social a {
-    color: #333333;
-    margin: 0 1.5rem; }
-    .social a:hover, .social a:focus {
-      color: #8b8b8a; }
-  .social i {
-    font-size: 1.5rem; }
-
 .footer {
   clear: both;
-  background-image: url("../images/footer-bg.png");
-  background-repeat: repeat-x;
-  background-position: bottom left;
-  background-size: cover;
   padding-bottom: 11%;
   margin-top: 3rem; }
 
@@ -1768,7 +1445,6 @@ FOOTER STYLES
       text-transform: none;
       padding: 0;
       margin: 0 1.5rem;
-      font-weight: 400;
       font-size: 1.45rem;
       text-decoration: none;
       border: none;
@@ -1797,13 +1473,6 @@ LARGER MOBILE DEVICES
   *********************/
   html {
     font-size: 81%; }
-
-  .featured-image img {
-    width: 180%;
-    left: -30%; }
-
-  .team-carousel .carousel-item {
-    padding: 2.5rem 1.5rem 0; }
 
   /*********************
   NAVIGATION STYLES
@@ -1857,70 +1526,11 @@ TABLET & SMALLER LAPTOPS
   html {
     font-size: 80%; }
 
-  hr {
-    width: 100%;
-    margin: 2rem auto; }
-
-  .featured-image .page-title, .featured-image .widget_text {
-    width: 60%;
-    height: 50%;
-    overflow: auto;
-    margin: auto 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 7%;
-    text-align: left; }
-    .featured-image .page-title h1, .featured-image .widget_text h1 {
-      font-size: 3.2rem;
-      text-align: left; }
-    .featured-image .page-title p, .featured-image .widget_text p {
-      margin: 0.5rem 0 1.5rem; }
-    .page-home-page .featured-image .page-title, .page-home-page .featured-image .widget_text {
-      height: 70%;
-      left: 35%; }
-    .page-contact-us .featured-image .page-title, .page-contact-us .featured-image .widget_text {
-      height: 59%; }
-  .featured-image img {
-    width: 100% !important;
-    height: auto;
-    left: auto; }
-
-  .row.wrap {
-    margin: 0.75rem auto 1rem; }
-  .row [class*="col-"] {
-    padding: 2rem; }
-  .row .col-6:nth-child(odd) {
-    padding-right: 2.85rem; }
-  .row .col-6:nth-child(even) {
-    padding-left: 2.15rem; }
-  .row.grad-alt {
-    display: block;
-    text-align: left; }
-    .row.grad-alt .icon, .row.grad-alt img[alt*="icon-"] {
-      margin: 0 1rem 1rem; }
-    .page-home-page .row.grad-alt [class*="col-"] {
-      min-height: 28rem; }
-    .page-technology .row.grad-alt [class*="col-"] {
-      min-height: 21rem; }
-
-  .team-carousel .carousel-item {
-    padding: 2.5rem 3.5rem 0; }
-
-  .cat-filter ul {
-    display: inline-block;
-    margin-left: 1.85rem; }
-
-  .single .wrap.post {
-    max-width: 90%; }
-
   /*********************
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
     width: 760px; }
-    .wrap.insights-text {
-      margin-left: auto; }
 
   /*********************
   HEADER STYLES
@@ -1948,12 +1558,6 @@ TABLET & SMALLER LAPTOPS
   .menu-button {
     display: none; }
 
-  .menu-wrapper {
-    opacity: 1;
-    visibility: visible;
-    padding: 0;
-    position: relative; }
-
   nav li {
     text-align: left; }
     nav li a {
@@ -1977,6 +1581,11 @@ TABLET & SMALLER LAPTOPS
           color: #8b8b8a; }
       .nav li ul.sub-menu,
       .nav li ul.children {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        background: #fff;
+        margin: 0;
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
@@ -1993,39 +1602,6 @@ TABLET & SMALLER LAPTOPS
       .nav li:hover > ul {
         top: auto;
         visibility: visible; }
-
-  .socket-nav {
-    position: absolute;
-    right: 2rem;
-    top: 0;
-    margin: 1.4rem 0;
-    padding-right: 2.5rem; }
-    .socket-nav li {
-      display: inline-block;
-      margin-left: 0.85rem;
-      margin-right: 0;
-      font-size: 90%; }
-      .socket-nav li a:hover, .socket-nav li a:focus {
-        color: #8b8b8a; }
-      .socket-nav li.green-btn, .socket-nav li#submit {
-        display: inline-block;
-        max-width: none;
-        margin: auto;
-        margin-left: 0.85rem; }
-      .socket-nav li.lang-item {
-        display: block;
-        position: absolute;
-        right: 0;
-        margin: 0; }
-        .socket-nav li.lang-item a {
-          display: block;
-          font-size: 0; }
-        .socket-nav li.lang-item img {
-          width: 22px; }
-      .socket-nav li.lang-item-en {
-        top: 0; }
-      .socket-nav li.lang-item-es {
-        bottom: 0; }
 
   /*********************
   SIDEBARS & ASIDES
@@ -2050,15 +1626,6 @@ TABLET & SMALLER LAPTOPS
   /*********************
   FOOTER STYLES
   *********************/
-  .pre-footer .col-6 {
-    padding: 10px; }
-
-  .social {
-    float: right;
-    text-align: left; }
-    .social a {
-      margin: 0 0 0 3rem; }
-
   .footer-links {
     float: left; }
     .footer-links ul {
@@ -2082,25 +1649,7 @@ DESKTOP
   
   ******************************************************************/
   .wrap {
-    width: 1020px; }
-
-  .featured-image .page-title, .featured-image .widget_text {
-    left: 20%;
-    width: 40%; }
-    .page-home-page .featured-image .page-title, .page-home-page .featured-image .widget_text {
-      height: 50%;
-      left: 40%; }
-    .page-about-us .featured-image .page-title, .page-about-us .featured-image .widget_text {
-      height: 40%; }
-
-  .single .wrap.post {
-    max-width: 70%; }
-
-  .nav {
-    margin: 1.5em 0; }
-
-  .page-home-page .row.grad-alt [class*="col-"], .page-technology .row.grad-alt [class*="col-"] {
-    min-height: 17rem; } }
+    width: 1020px; } }
 /*********************
 LARGE VIEWING SIZE
 *********************/
@@ -2116,14 +1665,7 @@ LARGE VIEWING SIZE
     font-size: 100%; }
 
   .wrap {
-    width: 1200px; }
-
-  .nav {
-    margin: 1.65em 0; }
-
-  .page-home-page .featured-image .page-title, .page-home-page .featured-image .widget_text {
-    height: 60%;
-    width: 50%; } }
+    width: 1200px; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 *********************/

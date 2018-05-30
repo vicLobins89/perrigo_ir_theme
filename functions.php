@@ -109,12 +109,6 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 	
-	register_sidebar(array(
-		'id' => 'sidebar2',
-		'name' => __( 'Blog Hero Area', 'bonestheme' ),
-		'description' => __( 'The hero area of the Blog page', 'bonestheme' ),
-	));
-	
 } // don't remove this bracket!
 
 

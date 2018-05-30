@@ -1,5 +1,4 @@
 <!doctype html>
-
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
@@ -30,15 +29,8 @@
             <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
-		<?php // end of wordpress head ?>
-
-		<?php // drop Google Analytics Here ?>
-		<?php // end analytics ?>
 		
 		<?php wp_head(); ?>
 		<?php $options = get_option('rh_settings'); ?>
@@ -64,8 +56,8 @@
 					}
 					?>
 					
-					<a class="menu-button" title="Main Menu"><i class="fas fa-bars"></i></a>
-					<div class="menu-wrapper"><nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<a class="menu-button" title="Main Menu"></a>
+					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
 							'container' => false,                           // remove nav container
 							'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -80,22 +72,6 @@
 							'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 					</nav>
-					
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-							'container' => false,
-							'container_class' => 'socket cf',                 // class of container (should you choose to use it)
-							'menu' => __( 'Socket Links', 'bonestheme' ),  // nav name
-							'menu_class' => 'socket-nav cf',               // adding custom nav class
-							'theme_location' => 'socket-nav',                 // where it's located in the theme
-							'before' => '',                                 // before the menu
-							'after' => '',                                  // after the menu
-							'link_before' => '',                            // before each link
-							'link_after' => '',                             // after each link
-							'depth' => 0,                                   // limit the depth of the nav
-							'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
-					</nav></div>
 
 				</div>
 
