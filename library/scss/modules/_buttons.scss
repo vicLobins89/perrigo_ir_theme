@@ -26,13 +26,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 	background-color: $black;
 	font-size: 1.4rem;
 	line-height: 1;
-	font-weight: 400;
+	font-weight: 700;
 	padding: 0.7rem 0.75rem;
-	margin-right: 0.85rem;
-	border: 2px solid $black;
 	cursor: pointer;
-	text-transform: uppercase;
-	min-width: 8rem;
+	min-width: 15rem;
     text-align: center;
 	@include transition(all 0.14s ease-in-out);
 
@@ -55,6 +52,17 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 } // end .button
 
+
+.white-btn, a.white-btn {
+	@extend %btn;
+	color: $blue;
+	background: transparent url(../images/white-btn.png) no-repeat center center;
+	background-size: contain;
+	
+	&:hover, &:focus {
+		color: $light-blue;
+	}
+}
 
 .green-btn, a.green-btn {
 	@extend %btn; // here we load the btn defaults

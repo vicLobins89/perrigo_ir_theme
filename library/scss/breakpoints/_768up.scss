@@ -33,26 +33,7 @@ HEADER STYLES
 .header {}
 
 #logo {
-	display: block;
-	width: 240px;
-	margin: 1.4rem 0;
-	position: absolute;
-	z-index: 10;
-	left: 2rem;
-	font-size: 0;
 	
-	img {
-		max-width: 100%;
-		height: auto;
-	}
-
-	a {
-		color: $black;
-	}
-}
-
-#logo-mobile {
-	display: none;
 }
 
 /*********************
@@ -63,31 +44,15 @@ NAVIGATION STYLES
 	display: none;
 }
 
-nav {
-	li {
-		text-align: left;
-		
-		a {
-			font-size: 0.85rem;
-		}
-	}
-}
-
 .nav {
-	border: none;
-	text-align: center;
-	margin: 4.65em 0 1.5em;
 	
 	li {
 		display: inline-block;
 		position: relative;
-		border: none;
 
 		a {
-			border-bottom: 0;
-
 			&:hover, &:focus {
-				color: $link-hover;
+				color: $gray;
 			}
 		}
 

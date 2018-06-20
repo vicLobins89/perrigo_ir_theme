@@ -289,7 +289,7 @@ function display_linkedin_el() {
 function display_copyright_el() {
 	$options = get_option('rh_settings');
 	?>
-	<input type='text' name='rh_settings[copyright_txt]' value='<?php echo $options['copyright_txt']; ?>'>
+	<textarea rows="8" cols="70" name='rh_settings[copyright_txt]'><?php echo $options['copyright_txt']; ?></textarea>
 	<?php
 }
 

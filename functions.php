@@ -153,7 +153,8 @@ function bones_comments( $comment, $args, $depth ) {
 
 
 function bones_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Sans:400,700');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Sans+Narrow:700');
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');

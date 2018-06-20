@@ -42,7 +42,21 @@
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
+				
+				<?php wp_nav_menu(array(
+					 'container' => true,                           // remove nav container
+					 'container_class' => 'socket cf',                 // class of container (should you choose to use it)
+					 'menu' => __( 'Socket Links', 'bonestheme' ),  // nav name
+					 'menu_class' => 'socket-nav cf',               // adding custom nav class
+					 'theme_location' => 'socket-nav',                 // where it's located in the theme
+					 'before' => '',                                 // before the menu
+					   'after' => '',                                  // after the menu
+					   'link_before' => '',                            // before each link
+					   'link_after' => '',                             // after each link
+					   'depth' => 0,                                   // limit the depth of the nav
+					 'fallback_cb' => ''                             // fallback function (if there is one)
+				)); ?>
+				
 				<div id="inner-header" class="cf">
 
 					<?php
@@ -50,9 +64,6 @@
 						echo '<a id="logo" href="'. home_url() .'"><img src="'. $options['logo'] .'" alt="'. get_bloginfo('name') .'" /></a>';
 					} else {
 						echo '<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="'. home_url() .'">'. get_bloginfo('name') .'</a></p>';
-					}
-					if($options['logo_alt']){
-						echo '<a id="logo-mobile" href="'. home_url() .'"><img src="'. $options['logo_alt'] .'" alt="'. get_bloginfo('name') .'" /></a>';
 					}
 					?>
 					

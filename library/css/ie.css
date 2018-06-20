@@ -65,6 +65,22 @@ CSS3 GRADIENTS
 BOX SIZING
 *********************/
 /* @include box-sizing(border-box); */
+/*********************
+VENDOR
+*********************/
+/*
+.selector {
+  @include prefix(transform, rotate(45deg), webkit ms);
+}
+*/
+/*********************
+GRADIENT
+*********************/
+/*
+.my_div {
+  @include horizontal-gradient(white, transparent);
+}
+*/
 /******************************************************************
 Site Name: Honey
 Author: Vic Lobins
@@ -142,50 +158,22 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-#logo {
-  display: block;
-  width: 240px;
-  margin: 1.4rem 0;
-  position: absolute;
-  z-index: 10;
-  left: 2rem;
-  font-size: 0; }
-  #logo img {
-    max-width: 100%;
-    height: auto; }
-  #logo a {
-    color: #000; }
-
-#logo-mobile {
-  display: none; }
-
 /*********************
 NAVIGATION STYLES
 *********************/
 .menu-button {
   display: none; }
 
-nav li {
-  text-align: left; }
-  nav li a {
-    font-size: 0.85rem; }
-
 .nav {
-  border: none;
-  text-align: center;
-  margin: 4.65em 0 1.5em;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
     display: inline-block;
     position: relative;
-    border: none;
     /* showing sub-menus */ }
-    .nav li a {
-      border-bottom: 0; }
-      .nav li a:hover, .nav li a:focus {
-        color: #8b8b8a; }
+    .nav li a:hover, .nav li a:focus {
+      color: #808082; }
     .nav li ul.sub-menu,
     .nav li ul.children {
       display: block;

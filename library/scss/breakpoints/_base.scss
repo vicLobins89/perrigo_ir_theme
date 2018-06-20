@@ -45,6 +45,286 @@ img {
 	}
 }
 
+.featured-image {
+	position: relative;
+	font-size: 0;
+	
+	&.blue, &.white, &.red, &.orange {
+		&:after {
+			content: '';
+			position: absolute;
+			width: 101%;
+			width: calc(100% + 2px);
+			height: 100%;
+			left: -1px;
+			bottom: -1px;
+			@include prefix(background-size, 101% !important, webkit moz ms o);
+		}
+	}
+	
+	&.blue {
+		&:after {
+			background: url(../images/blue-wave.svg) no-repeat bottom center;
+		}
+	}
+	
+	&.white {
+		&:after {
+			background: url(../images/white-wave.svg) no-repeat bottom center;
+		}
+	}
+	
+	&.red {
+		&:after {
+			background: url(../images/red-wave.svg) no-repeat bottom center;
+		}
+	}
+	
+	&.orange {
+		&:after {
+			background: url(../images/orange-wave.svg) no-repeat bottom center;
+		}
+	}
+}
+
+.main-content {
+	position: relative;
+	
+	.entry-content {
+		padding-right: 10%;
+		padding-top: 10px;
+		
+		h3 {
+			font-size: 2rem;
+			margin: 0 0 1.5em;
+		}
+	}
+	
+	h1 {
+		font-weight: 700;
+		color: $blue;
+		margin-top: 0;
+	}
+	
+	&.red {
+		background: $dark-red;
+		background: $dark-red url(../images/red-grad.svg) repeat top left;
+		@include prefix(background-size, 101% !important, webkit moz ms o);
+		
+		
+		* {
+			color: $white;
+		}
+	}
+	
+	&.orange {
+		background: $dark-orange;
+		background: $orange url(../images/orange-grad.svg) repeat top left;
+		@include prefix(background-size, 101% !important, webkit moz ms o);
+		
+		
+		* {
+			color: $white;
+		}
+	}
+}
+
+.content-wrapper {
+	position: relative;
+}
+
+#packs_slider {
+	padding: 1em 3em;
+	
+	.owl-item {
+		.sa_hover_container {
+			display: inline-block;
+			display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+			display: -ms-flexbox;  /* TWEENER - IE 10 */
+			display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+			display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+			@include prefix(flex-direction, row, webkit ms);
+			@include prefix(flex-wrap, nowrap, webkit ms);
+			@include prefix(justify-content, center, webkit ms);
+			@include prefix(align-items, center, webkit ms);
+			
+			.col-6 {
+				float: none;
+				-webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+				@include prefix(flex, 1, webkit ms);
+			}
+		}
+	}
+	
+	h2 {
+		font-weight: 700;
+		color: $blue;
+	}
+	
+	p {
+		font-size: 1.65rem;
+		padding: 0 10%;
+	}
+	
+	a {
+		@extend .white-btn;
+	}
+	
+	.owl-dots {
+		left: 0;
+		bottom: 0 !important;
+		
+		.owl-dot {
+			outline: none;
+			
+			span {
+				width: 17px !important;
+				height: 17px !important;
+				border: 3px solid $gray !important;
+				background-color: $white !important;
+			}
+			
+			&.active {
+				span {
+					background-color: $gray !important;
+				}
+			}
+		}
+	}
+	
+	.owl-nav {
+		.owl-prev {
+			background: url('../images/icon-prev.png') no-repeat center center !important;
+			@include prefix(background-size, 70% !important, webkit moz ms o);
+			left: 3rem;
+		}
+		
+		.owl-next {
+			background: url('../images/icon-next.png') no-repeat center center !important;
+			@include prefix(background-size, 70% !important, webkit moz ms o);
+			right: 3rem;
+		}
+		
+		button {
+			height: 60px !important;
+			width: 70px !important;
+			outline: none;
+			
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+}
+
+.grad-row {
+	display: inline-block;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	@include prefix(flex-direction, row, webkit ms);
+	@include prefix(flex-wrap, nowrap, webkit ms);
+	@include prefix(justify-content, center, webkit ms);
+	@include prefix(align-items, center, webkit ms);
+
+	.grad-panel {
+		padding: 5em 4em;
+		float: none;
+		-webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+		@include prefix(flex, 1, webkit ms);
+		
+		&.red {
+			@include horizontal-gradient($dark-red, $red);
+		}
+		
+		&.orange {
+			@include horizontal-gradient($dark-orange, $orange);
+		}
+		
+		*:not(a) {
+			color: $white;
+		}
+		
+		p {
+			font-size: 1.65em;
+    		padding: 0 10%;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.row {
+	margin-top: 3.5em !important;
+	margin-bottom: 3em !important;
+	
+	.col-6 {
+		padding: 10px 5em;
+		
+		.title {
+			background: transparent url(../images/blue-btn.png) no-repeat center center;
+			background-size: contain;
+			color: $white;
+			text-align: center;
+			display: inline-block;
+			min-width: 8.5em;
+			font-size: 2.25em;
+			padding: 10px 0;
+			margin-bottom: 2rem;
+		}
+		
+		ul {
+			margin: 0 0 2rem;
+			
+			li {
+				font-weight: 700;
+				color: darken($gray, 20%);
+				font-style: italic;
+				font-size: 1.5rem;
+				margin: 5px 0;
+				line-height: 1.2;
+				position: relative;
+				
+				&:before {
+					content: '';
+					background: url(../images/tick.png) no-repeat center center;
+					width: 20px;
+					height: 20px;
+					display: inline-block;
+					background-size: contain;
+				}
+			}
+		}
+		
+		h3 {
+			font-size: 1.5em;
+			color: $blue;
+		}
+		
+		hr {
+			width: 50%;
+			border: none;
+			height: 2px;
+			background: $blue;
+			margin: 2rem 0;
+		}
+		
+		p {
+			width: 90%;
+			font-size: 95%;
+			color: lighten($text-color, 15%);
+			line-height: 1.5;
+			
+			&.disclaimer {
+				font-size: 80%;
+			}
+		}
+	}
+}
+
 /********************
 WORDPRESS BODY CLASSES
 ********************/
@@ -157,37 +437,36 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 3.2rem;
-	line-height: 1.2;
+	font-size: 3.75em;
+    line-height: 1;
 }
 
 h2, .h2 {
-	font-size: 2.8rem;
+	font-size: 2.8em;
 	margin: 0.35rem 0 1rem;
 	color: lighten($black, 20%);
 }
 
 h3, .h3 {
-	font-size: 2.65rem;
+	font-size: 2.65em;
 	margin: 0 0 1rem;
-	letter-spacing: 0.2rem;
 }
 
 h4, .h4 {
-	font-size: 1.3rem;
-	letter-spacing: 0.075rem;
+	font-size: 1.3em;
+	letter-spacing: 0.075em;
 	text-transform: uppercase;
-	margin: 0.25rem 0;
+	margin: 0.25em 0;
 }
 
 h5, .h5 {
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	color: lighten($black, 20%);
 }
 
 p {
-	line-height: 1.5;
-	font-size: 1.15rem;
+	line-height: 1.3;
+	font-size: 1.15em;
 	margin: 0.85rem 0 1.2rem;
 }
 
@@ -225,15 +504,15 @@ HEADER STYLES
 }
 
 #logo {
-	display: none;
-}
-
-#logo-mobile {
+	position: absolute;
+	top: 0;
+	left: 3rem;
+	z-index: 999;
 	display: block;
-	width: 3.5rem;
-    margin: 0.75rem 1.25rem;
-    float: left;
-    font-size: 0;
+	width: 220px;
+	margin: 0;
+	float: left;
+	font-size: 0;
 	
 	img {
 		max-width: 100%;
@@ -250,7 +529,7 @@ NAVIGATION STYLES
 *********************/
 
 .menu-button {
-	color: $green !important;
+	color: $blue !important;
 	float: right;
 	margin: 1.2rem 1.25rem 1.1rem;
 	line-height: 1;
@@ -260,20 +539,18 @@ NAVIGATION STYLES
 nav {
 	
 	li {
-		text-align: center;
-		
-		a {
-			text-transform: uppercase;
-			font-size: 1.25rem;
+		a, a:visited {
+			font-size: 1.2rem;
+			font-weight: 700;
 			line-height: 1;
 			text-decoration: none;
-			color: $link-color;
+			color: $blue;
 		}
 		
 		&.current-menu-item,
 		&.current_page_item,
 		&.current_page_ancestor {
-			a {
+			> a {
 				color: $gray;
 			}
 		}
@@ -281,13 +558,11 @@ nav {
 }
 
 .nav {
-	border-bottom: 0;
-	margin: 1.65em 0 .75em;
-	border-top: 1px solid $green;
+	float: right;
+	margin: 7.5em 3em 1em 0;
 
 	li {
 		list-style: none;
-		border-bottom: 1px solid $green;
 
 		a {
 			display: block;
@@ -305,16 +580,19 @@ nav {
 
 		&:first-child {}
 
-		&:last-child {}
+		&:last-child {
+			a {
+				padding-right: 0;
+			}
+		}
 
 		ul.sub-menu,
 		ul.children {
+			z-index: 10;
 
 			li {
 
 				a {
-					padding-left: 30px;
-
 					&:hover,
 					&:focus {}
 
@@ -341,6 +619,30 @@ nav {
 
 	}  /* end current highlighters */
 
+}
+
+.socket-nav {
+	background: $light-gray;
+	width: 100%;
+	margin: 0;
+	padding: .5rem 0;
+	
+	li {
+		float: right;
+		margin-right: 3rem;
+		
+		a {
+			color: $white;
+			text-decoration: none;
+			font-size: 1.2rem;
+			font-weight: 700;
+			
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
 
@@ -383,7 +685,13 @@ POSTS & CONTENT STYLES
 /* style individual post classes */
 .post-id {}         /* post by id (i.e. post-3) */
 .post {}            /* general post style */
-.page {}            /* general article on a page style */
+
+.page {
+	img {
+		max-width: 100%;
+	}
+}
+
 .attachment {}      /* general style on an attatchment */
 .sticky {}          /* sticky post style */
 .hentry {}          /* hentry class */
@@ -400,7 +708,7 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-	padding: 1.5rem 2rem 0;
+	padding: 4rem 5rem 4rem;
 
 	h2 {
 		font-size: 2.25rem;
@@ -409,6 +717,11 @@ POSTS & CONTENT STYLES
 
 	p {
 		margin: 0 0 1.5em;
+		font-size: 1.85rem;
+		
+		b, strong {
+			font-size: 1.8rem;
+		}
 	}
 
 
@@ -956,10 +1269,57 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
+.pre-footer {
+	background: #e5e5e5;
+	padding: 3em 3em 2.5em;
+	
+	p {
+		font-size: 0.85em;
+		margin: 0 0 1em;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
 .footer {
 	clear: both;
-	padding-bottom: 11%;
-	margin-top: 3rem;
+	
+	#inner-footer {
+		padding: 0 3rem 3rem;
+		background: $blue;
+	}
+	
+	&.blue-wave {
+		background: rgb(229, 229, 229);
+		font-size: 0;
+	}
+	
+	.wave, .wave img {
+		display: block;
+		font-size: 0;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		left: 0; top: 0;
+	}
+	
+	.wave {
+		@include prefix(background-size, 101% !important, webkit moz ms o);
+		
+		&.white {
+			background: url(../images/footer-wave-white.svg) no-repeat left -2px bottom 0;
+		}
+		
+		&.gray {
+			background: url(../images/footer-wave-gray.svg) no-repeat left -2px bottom 0;
+		}
+		
+		img {
+			visibility: hidden;
+		}
+	}
 }
 
 .footer-links {
@@ -988,10 +1348,17 @@ FOOTER STYLES
 
 } /* end .footer-links */
 
+.logo-footer {
+	display: block;
+	max-width: 140px;
+	margin-bottom: 20px;
+}
 
 .copyright {
 	clear: both;
 	font-size: 0.85rem;
+	line-height: 1;
 	margin: 1rem 0;
     text-align: center;
+	color: $white;
 }

@@ -19,17 +19,22 @@ $alert-blue:        #d5edf8;
 $black:             #000;
 $white:             #fff;
 
-$light-gray:        #dcdcdc;
-$gray:              #8b8b8a;
+$light-gray:        #bfbfc1;
+$gray:              #808082;
 $meta-gray:         #ccc;
-$text-color:        $black;
+$text-color:        lighten($black, 40%);
 
-$blue:				#0194dd;
+$blue:				#0054a3;
+$light-blue:		#00a6db;
 $yellow:			#f7c400;
 $green:				#0b6b4e;
 $pale-green:		#bad3ca;
+$red:				#cc1a26;
+$dark-red:			#5e0000;
+$orange:			#fed940;
+$dark-orange:		#f27c35;
 
-$link-color:        $black;
+$link-color:        $blue;
 $link-hover:        $gray;
 
 $border-color:      #ccc;
