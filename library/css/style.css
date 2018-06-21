@@ -1778,15 +1778,15 @@ FOOTER STYLES
     left: 0;
     top: 0; }
   .footer .wave {
-    -webkit-background-size: 101% !important;
-    -moz-background-size: 101% !important;
-    -ms-background-size: 101% !important;
-    -o-background-size: 101% !important;
-    background-size: 101% !important; }
+    -webkit-background-size: 100% !important;
+    -moz-background-size: 100% !important;
+    -ms-background-size: 100% !important;
+    -o-background-size: 100% !important;
+    background-size: 100% !important; }
     .footer .wave.white {
-      background: url(../images/footer-wave-white.svg) no-repeat left -2px bottom 0; }
+      background: url(../images/footer-wave-white.png) no-repeat left bottom; }
     .footer .wave.gray {
-      background: url(../images/footer-wave-gray.svg) no-repeat left -2px bottom 0; }
+      background: url(../images/footer-wave-gray.png) no-repeat left bottom; }
     .footer .wave img {
       visibility: hidden; }
 
