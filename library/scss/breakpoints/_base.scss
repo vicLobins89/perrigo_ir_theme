@@ -26,6 +26,7 @@ body {
 
 #container {
 	overflow: hidden;
+	font-size: 50%;
 }
 
 img {
@@ -95,7 +96,7 @@ img {
 		padding-top: 10px;
 		
 		h3 {
-			font-size: 2rem;
+			font-size: 2em;
 			margin: 0 0 1.5em;
 		}
 	}
@@ -143,7 +144,7 @@ img {
 			display: -ms-flexbox;  /* TWEENER - IE 10 */
 			display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 			display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-			@include prefix(flex-direction, row, webkit ms);
+			@include prefix(flex-direction, column, webkit ms);
 			@include prefix(flex-wrap, nowrap, webkit ms);
 			@include prefix(justify-content, center, webkit ms);
 			@include prefix(align-items, center, webkit ms);
@@ -163,7 +164,7 @@ img {
 	
 	p {
 		font-size: 1.65rem;
-		padding: 0 10%;
+		padding: 0;
 	}
 	
 	a {
@@ -172,7 +173,7 @@ img {
 	
 	.owl-dots {
 		left: 0;
-		bottom: 0 !important;
+		bottom: -30px !important;
 		
 		.owl-dot {
 			outline: none;
@@ -196,13 +197,13 @@ img {
 		.owl-prev {
 			background: url('../images/icon-prev.png') no-repeat center center !important;
 			@include prefix(background-size, 70% !important, webkit moz ms o);
-			left: 3rem;
+			left: 0;
 		}
 		
 		.owl-next {
 			background: url('../images/icon-next.png') no-repeat center center !important;
 			@include prefix(background-size, 70% !important, webkit moz ms o);
-			right: 3rem;
+			right: 0;
 		}
 		
 		button {
@@ -219,20 +220,28 @@ img {
 
 .grad-row {
 	display: inline-block;
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 	@include prefix(flex-direction, row, webkit ms);
-	@include prefix(flex-wrap, nowrap, webkit ms);
+	@include prefix(flex-wrap, wrap, webkit ms);
 	@include prefix(justify-content, center, webkit ms);
-	@include prefix(align-items, center, webkit ms);
+	@include prefix(align-items, stretch, webkit ms);
 
 	.grad-panel {
-		padding: 5em 4em;
-		float: none;
+		display: inline-block;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
 		-webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
 		@include prefix(flex, 1, webkit ms);
+		@include prefix(flex-direction, column, webkit ms);
+		@include prefix(justify-content, center, webkit ms);
+		@include prefix(align-items, center, webkit ms);
+		padding: 5em 4em;
+		float: none;
 		
 		&.red {
 			@include horizontal-gradient($dark-red, $red);
@@ -271,7 +280,7 @@ img {
 			text-align: center;
 			display: inline-block;
 			min-width: 8.5em;
-			font-size: 2.25em;
+			font-size: 2.25rem;
 			padding: 10px 0;
 			margin-bottom: 2rem;
 		}
@@ -300,7 +309,7 @@ img {
 		}
 		
 		h3 {
-			font-size: 1.5em;
+			font-size: 1.5rem;
 			color: $blue;
 		}
 		
@@ -314,12 +323,35 @@ img {
 		
 		p {
 			width: 90%;
-			font-size: 95%;
+			font-size: 1.1rem;
 			color: lighten($text-color, 15%);
 			line-height: 1.5;
 			
 			&.disclaimer {
-				font-size: 80%;
+				font-size: 0.85rem;
+			}
+		}
+	}
+}
+
+.retailers {
+	&.wrap {
+		margin: 4rem auto;
+	}
+	
+	.col-6 {
+		padding: 3rem;
+	}
+	
+	h3 {
+		color: $blue;
+		font-size: 2em;
+		
+		a {
+			color: $blue;
+			
+			&:hover, &:focus {
+				color: $gray;
 			}
 		}
 	}
@@ -483,24 +515,6 @@ HEADER STYLES
 .header {
 	position: relative;
 	background-color: $white;
-	
-	&.active {
-		position: fixed;
-		width: 100%;
-		height: 100%;
-		z-index: 999;
-		
-		#logo-mobile, .menu-button {
-			position: absolute;
-			z-index: 9999;
-			left: 0;
-		}
-		
-		.menu-button {
-			right: 0;
-			left: auto;
-		}
-	}
 }
 
 #logo {
@@ -509,7 +523,7 @@ HEADER STYLES
 	left: 3rem;
 	z-index: 999;
 	display: block;
-	width: 220px;
+	width: 9rem;
 	margin: 0;
 	float: left;
 	font-size: 0;
@@ -524,19 +538,47 @@ HEADER STYLES
 	}
 }
 
+#inner-header {
+	&.active {
+		nav {
+			max-height: 400px;
+		}
+	}
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
 
 .menu-button {
-	color: $blue !important;
-	float: right;
-	margin: 1.2rem 1.25rem 1.1rem;
-	line-height: 1;
+	color: $blue;
+    float: right;
+    margin: 1.2rem 3rem 1.1rem;
+	padding: 0;
+    border: none;
+	outline: none;
+    border-radius: 0;
+    line-height: 1;
     font-size: 2.4rem;
+    width: 30px;
+    height: 30px;
+	background-image: url(../images/menu.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	background-color: transparent;
+	@include transition(background-position 0.3s ease-in-out);
+	
+	.active & {
+		background-position: right center;
+	}
 }
 
 nav {
+	overflow: hidden;
+	max-height: 0px;
+	width: 100%;
+	@include transition(max-height 0.3s ease-in-out);
 	
 	li {
 		a, a:visited {
@@ -558,8 +600,8 @@ nav {
 }
 
 .nav {
-	float: right;
-	margin: 7.5em 3em 1em 0;
+	margin: 3em 3em 2em;
+    text-align: center;
 
 	li {
 		list-style: none;
@@ -568,26 +610,11 @@ nav {
 			display: block;
 			text-decoration: none;
 			padding: 0.75em;
-
-			/*
-			this is for mobile ONLY, so there's no need
-			to declare hover styles here
-			*/
-			&:hover, &:focus {
-
-			}
-		}
-
-		&:first-child {}
-
-		&:last-child {
-			a {
-				padding-right: 0;
-			}
 		}
 
 		ul.sub-menu,
 		ul.children {
+			margin: 0;
 			z-index: 10;
 
 			li {
@@ -708,16 +735,16 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-	padding: 4rem 5rem 4rem;
+	padding: 4em 5em 4em;
 
 	h2 {
-		font-size: 2.25rem;
+		font-size: 2.25em;
 		margin: 1rem 3rem;
 	}
 
 	p {
 		margin: 0 0 1.5em;
-		font-size: 1.85rem;
+		font-size: 1.85em;
 		
 		b, strong {
 			font-size: 1.8rem;
@@ -1274,7 +1301,7 @@ FOOTER STYLES
 	padding: 3em 3em 2.5em;
 	
 	p {
-		font-size: 0.85em;
+		font-size: 0.85rem;
 		margin: 0 0 1em;
 		
 		&:last-child {
@@ -1358,7 +1385,5 @@ FOOTER STYLES
 	clear: both;
 	font-size: 0.85rem;
 	line-height: 1;
-	margin: 1rem 0;
-    text-align: center;
 	color: $white;
 }

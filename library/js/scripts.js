@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
 	viewport = updateViewportDimensions();
 	
 	$('.menu-button').on('click', function(){
-		$(this).parents('.header').toggleClass('active');
+		$('#inner-header').toggleClass('active');
 	});
 	
 	$(window).on('load resize', function(){

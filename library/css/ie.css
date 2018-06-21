@@ -149,6 +149,16 @@ GENERAL STYLES
 html {
   font-size: 80%; }
 
+#container {
+  font-size: 75%; }
+
+#packs_slider .owl-item .sa_hover_container {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+#packs_slider p {
+  padding: 0 10%; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -158,13 +168,23 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+#logo {
+  width: 13.5rem; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
 .menu-button {
   display: none; }
 
+nav {
+  max-height: none;
+  overflow: visible; }
+
 .nav {
+  float: right;
+  margin: 7.5em 3em 1em 0;
+  text-align: left;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -174,6 +194,8 @@ NAVIGATION STYLES
     /* showing sub-menus */ }
     .nav li a:hover, .nav li a:focus {
       color: #808082; }
+    .nav li:last-child a {
+      padding-right: 0; }
     .nav li ul.sub-menu,
     .nav li ul.children {
       display: block;
@@ -230,8 +252,7 @@ FOOTER STYLES
 
 /* end .footer-links */
 .copyright {
-  margin: 0;
-  text-align: left; }
+  margin: 0; }
 
 /******************************************************************
 Site Name: Honey
@@ -242,6 +263,9 @@ Stylesheet: Desktop Stylsheet
 ******************************************************************/
 .wrap {
   width: 1020px; }
+
+#container {
+  font-size: 100%; }
 
 /******************************************************************
 ADDITIONAL IE FIXES

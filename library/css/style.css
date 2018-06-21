@@ -941,7 +941,8 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 #container {
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 50%; }
 
 img {
   height: auto;
@@ -984,7 +985,7 @@ img {
     padding-right: 10%;
     padding-top: 10px; }
     .main-content .entry-content h3 {
-      font-size: 2rem;
+      font-size: 2em;
       margin: 0 0 1.5em; }
   .main-content h1 {
     font-weight: 700;
@@ -1026,9 +1027,9 @@ img {
     /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
     /* NEW, Spec - Firefox, Chrome, Opera */
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -1050,10 +1051,10 @@ img {
     color: #0054a3; }
   #packs_slider p {
     font-size: 1.65rem;
-    padding: 0 10%; }
+    padding: 0; }
   #packs_slider .owl-dots {
     left: 0;
-    bottom: 0 !important; }
+    bottom: -30px !important; }
     #packs_slider .owl-dots .owl-dot {
       outline: none; }
       #packs_slider .owl-dots .owl-dot span {
@@ -1070,7 +1071,7 @@ img {
     -ms-background-size: 70% !important;
     -o-background-size: 70% !important;
     background-size: 70% !important;
-    left: 3rem; }
+    left: 0; }
   #packs_slider .owl-nav .owl-next {
     background: url("../images/icon-next.png") no-repeat center center !important;
     -webkit-background-size: 70% !important;
@@ -1078,7 +1079,7 @@ img {
     -ms-background-size: 70% !important;
     -o-background-size: 70% !important;
     background-size: 70% !important;
-    right: 3rem; }
+    right: 0; }
   #packs_slider .owl-nav button {
     height: 60px !important;
     width: 70px !important;
@@ -1089,33 +1090,43 @@ img {
 .grad-row {
   display: inline-block;
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
-  /* NEW, Spec - Firefox, Chrome, Opera */
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center; }
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch; }
   .grad-row .grad-panel {
-    padding: 5em 4em;
-    float: none;
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     -webkit-box-flex: 1;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 5em 4em;
+    float: none; }
     .grad-row .grad-panel.red {
       /* fallback/image non-cover color */
       background-color: #5e0000;
@@ -1170,7 +1181,7 @@ img {
       text-align: center;
       display: inline-block;
       min-width: 8.5em;
-      font-size: 2.25em;
+      font-size: 2.25rem;
       padding: 10px 0;
       margin-bottom: 2rem; }
     .row .col-6 ul {
@@ -1191,7 +1202,7 @@ img {
           display: inline-block;
           background-size: contain; }
     .row .col-6 h3 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       color: #0054a3; }
     .row .col-6 hr {
       width: 50%;
@@ -1201,11 +1212,23 @@ img {
       margin: 2rem 0; }
     .row .col-6 p {
       width: 90%;
-      font-size: 95%;
+      font-size: 1.1rem;
       color: #8c8c8c;
       line-height: 1.5; }
       .row .col-6 p.disclaimer {
-        font-size: 80%; }
+        font-size: 0.85rem; }
+
+.retailers.wrap {
+  margin: 4rem auto; }
+.retailers .col-6 {
+  padding: 3rem; }
+.retailers h3 {
+  color: #0054a3;
+  font-size: 2em; }
+  .retailers h3 a {
+    color: #0054a3; }
+    .retailers h3 a:hover, .retailers h3 a:focus {
+      color: #808082; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1314,18 +1337,6 @@ HEADER STYLES
 .header {
   position: relative;
   background-color: #fff; }
-  .header.active {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 999; }
-    .header.active #logo-mobile, .header.active .menu-button {
-      position: absolute;
-      z-index: 9999;
-      left: 0; }
-    .header.active .menu-button {
-      right: 0;
-      left: auto; }
 
 #logo {
   position: absolute;
@@ -1333,7 +1344,7 @@ HEADER STYLES
   left: 3rem;
   z-index: 999;
   display: block;
-  width: 220px;
+  width: 9rem;
   margin: 0;
   float: left;
   font-size: 0; }
@@ -1343,28 +1354,52 @@ HEADER STYLES
   #logo a {
     color: #000; }
 
+#inner-header.active nav {
+  max-height: 400px; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
 .menu-button {
-  color: #0054a3 !important;
+  color: #0054a3;
   float: right;
-  margin: 1.2rem 1.25rem 1.1rem;
+  margin: 1.2rem 3rem 1.1rem;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 0;
   line-height: 1;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/menu.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-color: transparent;
+  -webkit-transition: background-position 0.3s ease-in-out;
+  transition: background-position 0.3s ease-in-out; }
+  .active .menu-button {
+    background-position: right center; }
 
-nav li a, nav li a:visited {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1;
-  text-decoration: none;
-  color: #0054a3; }
-nav li.current-menu-item > a, nav li.current_page_item > a, nav li.current_page_ancestor > a {
-  color: #808082; }
+nav {
+  overflow: hidden;
+  max-height: 0px;
+  width: 100%;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out; }
+  nav li a, nav li a:visited {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    color: #0054a3; }
+  nav li.current-menu-item > a, nav li.current_page_item > a, nav li.current_page_ancestor > a {
+    color: #808082; }
 
 .nav {
-  float: right;
-  margin: 7.5em 3em 1em 0;
+  margin: 3em 3em 2em;
+  text-align: center;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -1373,15 +1408,10 @@ nav li.current-menu-item > a, nav li.current_page_item > a, nav li.current_page_
     .nav li a {
       display: block;
       text-decoration: none;
-      padding: 0.75em;
-      /*
-      this is for mobile ONLY, so there's no need
-      to declare hover styles here
-      */ }
-    .nav li:last-child a {
-      padding-right: 0; }
+      padding: 0.75em; }
     .nav li ul.sub-menu,
     .nav li ul.children {
+      margin: 0;
       z-index: 10; }
 
 .socket-nav {
@@ -1434,13 +1464,13 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: 4rem 5rem 4rem; }
+  padding: 4em 5em 4em; }
   .entry-content h2 {
-    font-size: 2.25rem;
+    font-size: 2.25em;
     margin: 1rem 3rem; }
   .entry-content p {
     margin: 0 0 1.5em;
-    font-size: 1.85rem; }
+    font-size: 1.85em; }
     .entry-content p b, .entry-content p strong {
       font-size: 1.8rem; }
   .entry-content table {
@@ -1726,7 +1756,7 @@ FOOTER STYLES
   background: #e5e5e5;
   padding: 3em 3em 2.5em; }
   .pre-footer p {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     margin: 0 0 1em; }
     .pre-footer p:last-child {
       margin-bottom: 0; }
@@ -1787,8 +1817,6 @@ FOOTER STYLES
   clear: both;
   font-size: 0.85rem;
   line-height: 1;
-  margin: 1rem 0;
-  text-align: center;
   color: #fff; }
 
 /*********************
@@ -1860,6 +1888,16 @@ TABLET & SMALLER LAPTOPS
   html {
     font-size: 80%; }
 
+  #container {
+    font-size: 75%; }
+
+  #packs_slider .owl-item .sa_hover_container {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  #packs_slider p {
+    padding: 0 10%; }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -1869,13 +1907,23 @@ TABLET & SMALLER LAPTOPS
   /*********************
   HEADER STYLES
   *********************/
+  #logo {
+    width: 13.5rem; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
   .menu-button {
     display: none; }
 
+  nav {
+    max-height: none;
+    overflow: visible; }
+
   .nav {
+    float: right;
+    margin: 7.5em 3em 1em 0;
+    text-align: left;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -1885,6 +1933,8 @@ TABLET & SMALLER LAPTOPS
       /* showing sub-menus */ }
       .nav li a:hover, .nav li a:focus {
         color: #808082; }
+      .nav li:last-child a {
+        padding-right: 0; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         display: block;
@@ -1941,8 +1991,7 @@ TABLET & SMALLER LAPTOPS
 
   /* end .footer-links */
   .copyright {
-    margin: 0;
-    text-align: left; } }
+    margin: 0; } }
 /*********************
 DESKTOP
 *********************/
@@ -1955,7 +2004,10 @@ DESKTOP
   
   ******************************************************************/
   .wrap {
-    width: 1020px; } }
+    width: 1020px; }
+
+  #container {
+    font-size: 100%; } }
 /*********************
 LARGE VIEWING SIZE
 *********************/

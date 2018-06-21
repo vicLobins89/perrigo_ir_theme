@@ -17,6 +17,22 @@ html {
 
 body {}
 
+#container {
+	font-size: 75%;
+}
+
+#packs_slider {
+	.owl-item {
+		.sa_hover_container {
+			@include prefix(flex-direction, row, webkit ms);
+		}
+	}
+	
+	p {
+		padding: 0 10%;
+	}
+}
+
 
 /*********************
 LAYOUT & GRID STYLES
@@ -33,7 +49,7 @@ HEADER STYLES
 .header {}
 
 #logo {
-	
+	width: 13.5rem;
 }
 
 /*********************
@@ -44,7 +60,15 @@ NAVIGATION STYLES
 	display: none;
 }
 
+nav {
+	max-height: none;
+	overflow: visible;
+}
+
 .nav {
+	float: right;
+	margin: 7.5em 3em 1em 0;
+	text-align: left;
 	
 	li {
 		display: inline-block;
@@ -57,7 +81,11 @@ NAVIGATION STYLES
 		}
 
 		&:first-child {}
-		&:last-child {}
+		&:last-child {
+			a {
+				padding-right: 0;
+			}
+		}
 
 		ul.sub-menu,
 		ul.children {
@@ -179,5 +207,4 @@ FOOTER STYLES
 
 .copyright {
 	margin: 0;
-	text-align: left;
 }
