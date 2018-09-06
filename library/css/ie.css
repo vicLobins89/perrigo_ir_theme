@@ -245,10 +245,6 @@ FOOTER STYLES
 *********************/
 .footer-links {
   float: left; }
-  .footer-links ul {
-    text-align: left; }
-    .footer-links ul li a {
-      margin: 0 3rem 0 0; }
 
 /* end .footer-links */
 .copyright {
