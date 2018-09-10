@@ -75,7 +75,7 @@
 								
 								
 								<?php // PRE-FOOTER ?>
-								<?php if( !empty(get_field('pre_footer')) ) : ?>
+								<?php if( get_field('pre_footer') ) : ?>
 									<section class="pre-footer cf">
 										<?php the_field('pre_footer'); ?>
 									</section>

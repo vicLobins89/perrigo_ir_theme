@@ -50,7 +50,7 @@ img {
 	position: relative;
 	font-size: 0;
 	
-	&.blue, &.white, &.red, &.orange {
+	&.blue, &.white, &.red, &.orange, &.alt-blue {
 		&:after {
 			content: '';
 			position: absolute;
@@ -86,6 +86,12 @@ img {
 			background: url(../images/orange-wave.svg) no-repeat bottom center;
 		}
 	}
+	
+	&.alt-blue {
+		&:after {
+			background: url(../images/alt-blue-wave.svg) no-repeat bottom center;
+		}
+	}
 }
 
 .main-content {
@@ -108,9 +114,9 @@ img {
 	}
 	
 	&.red {
-		background: $dark-red;
-		background: $dark-red url(../images/red-grad.svg) repeat top left;
-		@include prefix(background-size, 101% !important, webkit moz ms o);
+		background: $alt-red;
+//		background: $dark-red url(../images/red-grad.svg) repeat top left;
+//		@include prefix(background-size, 101% !important, webkit moz ms o);
 		
 		
 		* {
@@ -122,6 +128,15 @@ img {
 		background: $dark-orange;
 		background: $orange url(../images/orange-grad.svg) repeat top left;
 		@include prefix(background-size, 101% !important, webkit moz ms o);
+		
+		
+		* {
+			color: $white;
+		}
+	}
+	
+	&.alt-blue {
+		background: $blue;
 		
 		
 		* {
@@ -244,11 +259,16 @@ img {
 		float: none;
 		
 		&.red {
-			@include horizontal-gradient($dark-red, $red);
+			background: $alt-red;
+//			@include horizontal-gradient($dark-red, $red);
 		}
 		
 		&.orange {
-			@include horizontal-gradient($dark-orange, $orange);
+//			@include horizontal-gradient($dark-orange, $orange);
+		}
+		
+		&.blue {
+			background: $blue;
 		}
 		
 		*:not(a) {
@@ -1353,7 +1373,7 @@ FOOTER STYLES
 	ul {
 		text-align: left;
 		border: none;
-		margin-bottom: 1rem;
+		margin: 0 0 1rem 0;
 
 		li {
 			display: block;
