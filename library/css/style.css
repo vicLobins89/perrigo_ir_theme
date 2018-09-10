@@ -1731,6 +1731,11 @@ FOOTER STYLES
     .pre-footer p:last-child {
       margin-bottom: 0; }
 
+#teconsent a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700; }
+
 .footer {
   clear: both; }
   .footer #inner-footer {

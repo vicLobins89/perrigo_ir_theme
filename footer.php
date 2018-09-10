@@ -31,7 +31,12 @@
 					if($options['logo_alt']){
 						echo '<a class="logo-footer" href="'. home_url() .'"><img src="'. $options['logo_alt'] .'" alt="'. get_bloginfo('name') .'" /></a>';
 					}
+					?>
 					
+					<div id="teconsent">
+						<script async="async" type="text/javascript" src=//consent.trustarc.com/notice?domain=perrigo.com&c=teconsent&js=bb&noticeType=bb&text=true&cookieLink=https%3A%2F%2Fwww.perrigo.com%2Fprivacy.aspx&privacypolicylink=https%3A%2F%2Fwww.perrigo.com%2Fprivacy.aspx></script>
+					</div>
+					<?php
 					wp_nav_menu(array(
     					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
     					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
@@ -45,7 +50,9 @@
     					'depth' => 0,                                   // limit the depth of the nav
     					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 					));
+					?>
 					
+					<?php
 					if($options['copyright_txt']){
 						echo '<p class="copyright">'. $options['copyright_txt'] .'</p>';
 					} else {

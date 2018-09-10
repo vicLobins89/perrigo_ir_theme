@@ -43,6 +43,8 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				
+				<div id="consent_blackbar"></div>
+				
 				<?php wp_nav_menu(array(
 					 'container' => true,                           // remove nav container
 					 'container_class' => 'socket cf',                 // class of container (should you choose to use it)
