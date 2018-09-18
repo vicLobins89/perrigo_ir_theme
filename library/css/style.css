@@ -1135,7 +1135,8 @@ img {
       color: #fff; }
     .grad-row .grad-panel p {
       font-size: 1.65em;
-      padding: 0 10%; }
+      padding: 0 10%;
+      width: 100%; }
       .grad-row .grad-panel p:last-child {
         margin-bottom: 0; }
 
@@ -1735,6 +1736,11 @@ FOOTER STYLES
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700; }
+
+#consent_blackbar {
+  z-index: 9999;
+  position: relative;
+  opacity: 0.8; }
 
 .footer {
   clear: both; }

@@ -1,0 +1,416 @@
+[
+    {
+        "key": "group_5ba0c8a743a83",
+        "title": "Gradient Panels",
+        "fields": [
+            {
+                "key": "field_5b1148e2a4720",
+                "label": "Gradient Panels",
+                "name": "gradient_panels",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "row",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5b1148f0a4721",
+                        "label": "Panel",
+                        "name": "panel",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "tabs": "all",
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5b1148fda4722",
+                        "label": "Colour",
+                        "name": "colour",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "blue": "Blue",
+                            "red": "Red",
+                            "orange": "Orange"
+                        },
+                        "default_value": [],
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "8"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5ba0c8a74a992",
+        "title": "Page Content",
+        "fields": [
+            {
+                "key": "field_5b227e9517280",
+                "label": "Curve Colour",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b227ec317282",
+                "label": "Wave Type",
+                "name": "wave_type",
+                "type": "select",
+                "instructions": "Choose the type of wave to display",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "white": "White",
+                    "blue": "Blue\/White",
+                    "orange": "Flat Orange",
+                    "red": "Flat Red",
+                    "alt-blue": "Flat Blue"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b1121d498d2d",
+                "label": "Columns Content",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b1121f798d2e",
+                "label": "Columns Content",
+                "name": "columns_content",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "row",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5b11222b98d30",
+                        "label": "Column",
+                        "name": "column",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "row_min": "",
+                        "row_limit": "",
+                        "layout": "row",
+                        "button_label": "Add Column",
+                        "min": 0,
+                        "max": 0,
+                        "collapsed": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b1122ce98d31",
+                                "label": "Title",
+                                "name": "title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "formatting": "html",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5b1122d698d32",
+                                "label": "Content",
+                                "name": "content",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "toolbar": "full",
+                                "media_upload": 1,
+                                "tabs": "all",
+                                "delay": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5b11325d73668",
+                "label": "Pre Footer",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5b11326b73669",
+                "label": "Pre Footer",
+                "name": "pre_footer",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                },
+                {
+                    "param": "page",
+                    "operator": "!=",
+                    "value": "14"
+                },
+                {
+                    "param": "page",
+                    "operator": "!=",
+                    "value": "12"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5ba0c8a75a0ca",
+        "title": "Retailers List",
+        "fields": [
+            {
+                "key": "field_5b114fb5b3acc",
+                "label": "Retailer",
+                "name": "retailer",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "row",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5b114fc4b3acd",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "return_format": "url",
+                        "min_width": 0,
+                        "min_height": 0,
+                        "min_size": 0,
+                        "max_width": 0,
+                        "max_height": 0,
+                        "max_size": 0,
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5b114fe1b3ace",
+                        "label": "Name",
+                        "name": "name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b114ff9b3acf",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "12"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": 1,
+        "description": ""
+    }
+]
