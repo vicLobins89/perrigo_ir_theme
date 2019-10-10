@@ -971,15 +971,15 @@ img {
     -o-background-size: 101% !important;
     background-size: 101% !important; }
   .featured-image.blue:after {
-    background: url(../images/blue-wave.svg) no-repeat bottom center; }
+    background: url(../images/blue-wave.png) no-repeat bottom center; }
   .featured-image.white:after {
-    background: url(../images/white-wave.svg) no-repeat bottom center; }
+    background: url(../images/white-wave.png) no-repeat bottom center; }
   .featured-image.red:after {
-    background: url(../images/red-wave.svg) no-repeat bottom center; }
+    background: url(../images/red-wave.png) no-repeat bottom center; }
   .featured-image.orange:after {
-    background: url(../images/orange-wave.svg) no-repeat bottom center; }
+    background: url(../images/orange-wave.png) no-repeat bottom center; }
   .featured-image.alt-blue:after {
-    background: url(../images/alt-blue-wave.svg) no-repeat bottom center; }
+    background: url(../images/alt-blue-wave.png) no-repeat bottom center; }
 
 .main-content {
   position: relative; }
